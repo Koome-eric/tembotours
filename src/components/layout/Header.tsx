@@ -35,8 +35,9 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="flex items-center justify-between h-16 w-full px-4 sm:px-6 lg:px-8 max-w-full mx-auto">
-        {/* Mobile Menu Trigger */}
+      <div className="flex items-center justify-between h-16 w-full px-4 sm:px-6 lg:px-8 max-w-full mx-auto relative">
+        
+        {/* Mobile Menu Trigger (left) */}
         <div className="flex items-center md:hidden flex-shrink-0">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -70,7 +71,8 @@ export function Header() {
                     {item.title}
                   </Link>
                 ))}
-                {/* Sign In / Sign Up in mobile menu */}
+
+                {/* Mobile Sign In / Sign Up */}
                 <SignedOut>
                   <SignInButton>
                     <Button
@@ -90,6 +92,7 @@ export function Header() {
                     </Button>
                   </SignUpButton>
                 </SignedOut>
+
                 <SignedIn>
                   {isLoaded && isAdmin && (
                     <Link href="/admin" onClick={() => setIsMobileMenuOpen(false)}>
@@ -113,20 +116,19 @@ export function Header() {
           </Sheet>
         </div>
 
-        {/* Logo (always centered) */}
-        <div className="flex-1 flex justify-center md:justify-center">
-          <Link href="/" className="flex items-center">
+        {/* Mobile Logo (centered, visible on small screens) */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 md:hidden">
+          <Link href="/">
             <Logo />
           </Link>
         </div>
 
-        {/* Right Side: Theme Toggle + Desktop Buttons */}
-        <div className="flex items-center gap-2 flex-shrink-0">
-          {/* Theme toggle is always visible */}
-          <ThemeToggle />
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6 text-sm">
+        {/* Desktop Logo + Nav (left-aligned) */}
+        <div className="hidden md:flex items-center gap-6 flex-1">
+          <Link href="/" className="flex items-center">
+            <Logo />
+          </Link>
+          <nav className="flex items-center gap-6 text-sm">
             {mainNav.map((item) => (
               <Link
                 key={item.title}
@@ -139,32 +141,39 @@ export function Header() {
                 {item.title}
               </Link>
             ))}
+          </nav>
+        </div>
 
-            <SignedOut>
-              <SignInButton>
-                <Button variant="ghost">Sign In</Button>
-              </SignInButton>
-              <SignUpButton>
-                <Button>Sign Up</Button>
-              </SignUpButton>
-            </SignedOut>
+        {/* Right Controls: Theme Toggle + User Buttons */}
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <ThemeToggle />
 
-            <SignedIn>
-              {isLoaded && isAdmin && (
-                <Link href="/admin">
-                  <Button variant="ghost" size="icon" aria-label="Admin Dashboard">
-                    <Shield className="h-5 w-5 text-accent" />
-                  </Button>
-                </Link>
-              )}
-              <Link href="/dashboard">
-                <Button variant="ghost" size="icon" aria-label="User Dashboard">
-                  <User className="h-5 w-5" />
+          <SignedOut>
+            <SignInButton>
+              <Button variant="ghost" className="hidden md:inline-flex">
+                Sign In
+              </Button>
+            </SignInButton>
+            <SignUpButton>
+              <Button className="hidden md:inline-flex">Sign Up</Button>
+            </SignUpButton>
+          </SignedOut>
+
+          <SignedIn>
+            {isLoaded && isAdmin && (
+              <Link href="/admin">
+                <Button variant="ghost" size="icon" aria-label="Admin Dashboard">
+                  <Shield className="h-5 w-5 text-accent" />
                 </Button>
               </Link>
-              <UserButton afterSignOutUrl="/" />
-            </SignedIn>
-          </nav>
+            )}
+            <Link href="/dashboard">
+              <Button variant="ghost" size="icon" aria-label="User Dashboard">
+                <User className="h-5 w-5" />
+              </Button>
+            </Link>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
         </div>
       </div>
     </header>
