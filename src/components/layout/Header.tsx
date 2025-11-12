@@ -2,7 +2,14 @@
 
 import Link from "next/link";
 import React from "react";
-import { useUser, UserButton, SignInButton, SignUpButton, SignedIn, SignedOut } from "@clerk/nextjs";
+import {
+  useUser,
+  UserButton,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+} from "@clerk/nextjs";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/Logo";
@@ -28,47 +35,98 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-7xl items-center">
-        {/* Mobile Nav Trigger */}
-        <div className="flex items-center md:hidden">
+      <div className="flex items-center justify-between h-16 w-full px-4 sm:px-6 lg:px-8 max-w-full mx-auto">
+        {/* Mobile Menu Trigger */}
+        <div className="flex items-center md:hidden flex-shrink-0">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button
                 variant="ghost"
-                className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0"
               >
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="pr-0">
-              <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
+            <SheetContent
+              side="left"
+              className="w-full sm:max-w-sm overflow-y-auto"
+            >
+              <Link
+                href="/"
+                className="flex items-center py-4 px-4"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
                 <Logo />
               </Link>
-              <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
-                <div className="flex flex-col space-y-3">
-                  {mainNav.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="text-foreground/80"
+              <nav className="flex flex-col py-4 px-4 space-y-3">
+                {mainNav.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-foreground/80"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+                {/* Sign In / Sign Up in mobile menu */}
+                <SignedOut>
+                  <SignInButton>
+                    <Button
+                      variant="ghost"
+                      className="w-full mt-2 text-center"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      {item.title}
+                      Sign In
+                    </Button>
+                  </SignInButton>
+                  <SignUpButton>
+                    <Button
+                      className="w-full mt-1 text-center"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Sign Up
+                    </Button>
+                  </SignUpButton>
+                </SignedOut>
+                <SignedIn>
+                  {isLoaded && isAdmin && (
+                    <Link href="/admin" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button variant="ghost" className="w-full text-center">
+                        Admin
+                      </Button>
                     </Link>
-                  ))}
-                </div>
-              </div>
+                  )}
+                  <Link href="/dashboard" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Button variant="ghost" className="w-full text-center">
+                      Dashboard
+                    </Button>
+                  </Link>
+                  <UserButton
+                    afterSignOutUrl="/"
+                    className="w-full mt-1 justify-center"
+                  />
+                </SignedIn>
+              </nav>
             </SheetContent>
           </Sheet>
         </div>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex md:flex-1">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+        {/* Logo (always centered) */}
+        <div className="flex-1 flex justify-center md:justify-center">
+          <Link href="/" className="flex items-center">
             <Logo />
           </Link>
-          <nav className="flex items-center gap-6 text-sm">
+        </div>
+
+        {/* Right Side: Theme Toggle + Desktop Buttons */}
+        <div className="flex items-center gap-2 flex-shrink-0">
+          {/* Theme toggle is always visible */}
+          <ThemeToggle />
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-6 text-sm">
             {mainNav.map((item) => (
               <Link
                 key={item.title}
@@ -81,24 +139,10 @@ export function Header() {
                 {item.title}
               </Link>
             ))}
-          </nav>
-        </div>
-
-        {/* Mobile Logo (centered) */}
-        <div className="flex flex-1 justify-center md:hidden">
-          <Link href="/" className="flex items-center space-x-2">
-            <Logo />
-          </Link>
-        </div>
-
-        {/* User/Theme Controls */}
-        <div className="flex items-center justify-end space-x-2 md:flex-initial">
-          <nav className="flex items-center gap-1">
-            <ThemeToggle />
 
             <SignedOut>
               <SignInButton>
-                <Button variant="ghost" className="hidden sm:inline-flex">Sign In</Button>
+                <Button variant="ghost">Sign In</Button>
               </SignInButton>
               <SignUpButton>
                 <Button>Sign Up</Button>
