@@ -1,0 +1,76 @@
+{
+  "eventImages": [
+    {
+      "id": "event-hero",
+      "description": "Beautifully decorated outdoor event at night",
+      "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldmVudCUyMGRlY29yfGVufDB8fHx8MTc2MjQwMDIzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event decor"
+    },
+    {
+      "id": "event-wedding",
+      "description": "Image for wedding event type",
+      "imageUrl": "https://images.unsplash.com/photo-1597159218332-b8c7b45a4c10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWRkaW5nJTIwYWlzbGV8ZW58MHx8fHwxNzYyNDAxMDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding aisle"
+    },
+    {
+      "id": "event-corporate",
+      "description": "Image for corporate event type",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBtZWV0aW5nfGVufDB8fHx8MTc2MjQwMTEyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate meeting"
+    },
+    {
+      "id": "event-private",
+      "description": "Image for private celebration event type",
+      "imageUrl": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJ0eSUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2MjQwMTE4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "party celebration"
+    },
+    {
+      "id": "event-destination",
+      "description": "Image for destination event type",
+      "imageUrl": "https://images.unsplash.com/photo-1502252435443-158fab1142d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMHdlZGRpbmd8ZW58MHx8fHwxNzYyNDAxMjMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach wedding"
+    },
+    {
+      "id": "gallery-1",
+      "title": "Luxury Destination Wedding",
+      "location": "Diani, Kenya",
+      "description": "Gallery image of a destination wedding",
+      "imageUrl": "https://images.unsplash.com/photo-1546193433-4d7cf82c813a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsdXh1cnklMjB3ZWRkaW5nfGVufDB8fHx8MTc2MjQwMTM0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury wedding"
+    },
+    {
+      "id": "gallery-2",
+      "title": "Corporate Gala",
+      "location": "Dubai",
+      "description": "Gallery image of a corporate gala",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjBnYWxhfGVufDB8fHx8MTc2MjQwMTQwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate gala"
+    },
+    {
+      "id": "gallery-3",
+      "title": "Private Birthday Party",
+      "location": "Nairobi",
+      "description": "Gallery image of a private birthday party",
+      "imageUrl": "https://images.unsplash.com/photo-1587825140708-df876c12b44e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwcGFydHl8ZW58MHx8fHwxNzYyNDAxNDYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "elegant party"
+    },
+    {
+      "id": "event-testimonial-1",
+      "description": "Avatar for event testimonial 1",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MjQwMTU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait woman"
+    },
+    {
+      "id": "event-testimonial-2",
+      "description": "Avatar for event testimonial 2",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjIyODA0MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "event-testimonial-3",
+      "description": "Avatar for event testimonial 3",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MjQwMTU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait woman"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-dubai-skyline",
+      "description": "Dubai skyline for hero section",
+      "imageUrl": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkdWJhaSUyMHNreWxpbmV8ZW58MHx8fHwxNzYyMzA5MjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dubai skyline"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Avatar for testimonial 1",
+      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyODA1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Avatar for testimonial 2",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyODA1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-mary",
+      "description": "Avatar for Mary N.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MjQwMTU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait woman"
+    },
+    {
+      "id": "testimonial-james-grace",
+      "description": "Avatar for James & Grace",
+      "imageUrl": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGNvdXBsZXxlbnwwfHx8fDE3NjI0MjYxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait couple"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Avatar for testimonial 4",
+      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyODA1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "dest-diani",
+      "description": "Diani Beach, Kenya",
+      "imageUrl": "https://images.unsplash.com/photo-1581454395899-912c3093278b?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "diani beach"
+    },
+    {
+      "id": "dest-dubai",
+      "description": "Dubai, UAE",
+      "imageUrl": "https://images.unsplash.com/photo-1551299335-735b52a12992?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "dubai desert"
+    },
+    {
+      "id": "dest-kigali",
+      "description": "Kigali, Rwanda",
+      "imageUrl": "https://images.unsplash.com/photo-1583950482539-7a5447155601?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "kigali city"
+    },
+    {
+      "id": "dest-mara",
+      "description": "Maasai Mara, Kenya",
+      "imageUrl": "https://images.unsplash.com/photo-1563273946-520336531923?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "safari wildlife"
+    },
+    {
+      "id": "dest-zanzibar",
+      "description": "Zanzibar, Tanzania",
+      "imageUrl": "https://images.unsplash.com/photo-1602431716972-35a1a1b857a2?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "zanzibar beach"
+    },
+    {
+      "id": "offer-zanzibar",
+      "description": "Offer for Zanzibar flights",
+      "imageUrl": "/images/zanzibar.jpg",
+      "imageHint": "zanzibar beach"
+    },
+    {
+      "id": "offer-hotel",
+      "description": "Offer for hotel discount",
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbHxlbnwwfHx8fDE3NjI0MTI4NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury hotel"
+    },
+    {
+      "id": "offer-combo",
+      "description": "Offer for visa and flight combo",
+      "imageUrl": "/images/visa3.jpg",
+      "imageHint": "airplane wing"
+    },
+    {
+      "id": "offer-safari",
+      "description": "Offer for safari",
+      "imageUrl": "/images/safari.jpg",
+      "imageHint": "safari giraffe"
+    },
+    {
+      "id": "blog-visa-free",
+      "description": "Image for visa-free destinations blog post",
+      "imageUrl": "/images/visa2.jpg",
+      "imageHint": "travel couple"
+    },
+    {
+      "id": "blog-flight-deals",
+      "description": "Image for flight deals blog post",
+      "imageUrl": "/images/flights.jpg",
+      "imageHint": "airplane window"
+    },
+    {
+      "id": "blog-dubai-hotels",
+      "description": "Image for family friendly hotels in Dubai blog post",
+      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3RlbCUyMHBvb2x8ZW58MHx8fHwxNzYyNDMyMzA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hotel pool"
+    },
+    {
+      "id": "blog-safari-guide",
+      "description": "Image for safari guide blog post",
+      "imageUrl": "/images/safari2.jpg",
+      "imageHint": "safari giraffe"
+    }
+  ]
+}
