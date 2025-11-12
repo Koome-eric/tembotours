@@ -20,7 +20,7 @@ function SubmitButton() {
 }
 
 export default function ContactPage() {
-  const [state, formAction] = useFormState(sendContactEmail, { message: null });
+  const [state, formAction] = useFormState(sendContactEmail, { message: "" });
   const { toast } = useToast();
 
   useEffect(() => {
