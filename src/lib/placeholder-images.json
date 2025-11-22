@@ -39,13 +39,13 @@
     {
       "id": "dest-diani",
       "description": "Diani Beach, Kenya",
-      "imageUrl": "https://images.unsplash.com/photo-1581454395899-912c3093278b?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/images/diani1.jpg",
       "imageHint": "diani beach"
     },
     {
       "id": "dest-dubai",
       "description": "Dubai, UAE",
-      "imageUrl": "https://images.unsplash.com/photo-1551299335-735b52a12992?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "/images/dubai1.jpg",
       "imageHint": "dubai desert"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "offer-hotel",
       "description": "Offer for hotel discount",
-      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbHxlbnwwfHx8fDE3NjI0MTI4NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/hotel.jpg",
       "imageHint": "luxury hotel"
     },
     {
@@ -105,7 +105,7 @@
     {
       "id": "blog-dubai-hotels",
       "description": "Image for family friendly hotels in Dubai blog post",
-      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3RlbCUyMHBvb2x8ZW58MHx8fHwxNzYyNDMyMzA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/hotel4.jpg",
       "imageHint": "hotel pool"
     },
     {

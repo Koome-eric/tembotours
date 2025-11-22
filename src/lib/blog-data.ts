@@ -2,8 +2,8 @@ import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "visa-free-destinations-for-kenyan-travelers",
-    title: "Visa-Free Destinations for Kenyan Travelers",
+    slug: "visa-free-destinations-for-all-travelers",
+    title: "Visa-Free Destinations for All Travelers",
     description: "Discover amazing countries you can visit without the hassle of a visa application. Your next adventure is closer than you think!",
     imageId: "blog-visa-free",
     tags: ["Travel Tips", "Visa"],

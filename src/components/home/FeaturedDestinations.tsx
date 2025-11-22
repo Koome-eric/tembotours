@@ -9,14 +9,14 @@ const destinations = [
     title: "Diani Beach, Kenya",
     description: "Luxury & sunshine from $299",
     href: "/hotels/search?destination=Diani%20Beach%2c%20Kenya",
-    imageUrl: "/images/diani.jpg",
+    imageUrl: "/images/diani1.jpg",
   },
   {
     id: "dest-dubai",
     title: "Dubai, UAE",
     description: "Desert glam and futuristic beauty",
     href: "/hotels/search?destination=Dubai",
-    imageUrl: "/images/dubai.jpg",
+    imageUrl: "/images/dubai1.jpg",
   },
   {
     id: "dest-kigali",
