@@ -47,7 +47,8 @@ export function Footer() {
             <div className="mt-4 space-y-2 text-sm text-muted-foreground">
               <p>123 Luxury Lane, Dubai, UAE</p>
               <p>info@tembotours.com</p>
-              <p>+971 4 123 4567</p>
+              <p>+971 5 692 43865</p>
+              <p>+254 7 218 62512</p>
             </div>
           </div>
         </div>
